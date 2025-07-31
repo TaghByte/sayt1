@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <title>Şəklilər</title>
-    <style>
-        body {
-            background-color: #121212;
-            color: white;
-            font-family: 'Segoe UI Emoji', 'Noto Color Emoji', Arial, sans-serif;
-            text-align: center;
-            padding: 40px;
-        }
+  <meta charset="UTF-8">
+  <title>Ad günün mübarək!</title>
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 40px auto;
-        }
+  <!-- Подключение Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #00000066;
-            transition: transform 0.3s;
-        }
+  <style>
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      font-family: 'Playwrite AU QLD', sans-serif;
+      text-align: center;
+      padding: 40px;
+      overflow-x: hidden;
+    }
 
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
+    h1 {
+      font-size: 50px;
+      color: #ff69b4;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px #ff69b440;
+    }
 
-        .after-text {
-            font-size: 40px;
-            color: white;
-            font-weight: bold;
-            margin-top: 30px;
-        }
-    </style>
+    .emoji-row {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto 40px auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .after-text {
+      font-family: 'Playwrite AU QLD', sans-serif; /* ⬅️ Шрифт для текста после фоток */
+      font-size: 36px;
+      color: #ffd700;
+      font-weight: bold;
+      margin-top: 30px;
+      text-shadow: 1px 1px 8px #ffd70088;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="gallery">
-        <img src="photo1.jpg" alt="Şəkil 1">
-        <img src="photo2.jpg" alt="Şəkil 2">
-        <img src="photo3.jpg" alt="Şəkil 3">
-        <img src="photo4.jpg" alt="Şəkil 4">
-        <img src="photo5.jpg" alt="Şəkil 5">
-        <img src="photo6.jpg" alt="Şəkil 6">
-        <img src="photo7.jpg" alt="Şəkil 7">
-        <img src="photo8.jpg" alt="Şəkil 8">
-        <img src="photo9.jpg" alt="Şəkil 9">
-        <img src="photo10.jpg" alt="Şəkil 10">
-        <img src="photo11.jpg" alt="Şəkil 11">
-        <img src="photo12.jpg" alt="Şəkil 12">
-    </div>
+  <!-- 🎵 Фоновая музыка -->
+  <audio autoplay loop>
+    <source src="saytp1.mp3" type="audio/mpeg">
+    Brauzerin musiqini dəstəkləmir 😢
+  </audio>
 
-    <div class="after-text">
-        Kas 1 defe dunyaya gelmek yerine 5 defe dunyaya gele bilseydim,ferqli ferqli olkelerde,ferqli adet enenelerle,belelikle 5 ferqli heyat yasayar,5 ferqli kariyera qurar,5 ferqli xasiyetim olardi ve butun 5 heyatimin hamsinda senin kimi anaya sahib oldugum ucun tanriya sukr ederdim.Yaxsi ki varsan,seni sevirem mamili
-    </div>
+  <!-- 🎉 Заголовок -->
+  <div class="emoji-row">🎉🎈🎊🎁🎂✨</div>
+  <h1>Ad günün mübarək!</h1>
+
+  <!-- 🖼 Галерея изображений -->
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Şəkil 1">
+    <img src="photo2.jpg" alt="Şəkil 2">
+    <img src="photo3.jpg" alt="Şəkil 3">
+    <img src="photo4.jpg" alt="Şəkil 4">
+    <img src="photo5.jpg" alt="Şəkil 5">
+    <img src="photo6.jpg" alt="Şəkil 6">
+    <img src="photo7.jpg" alt="Şəkil 7">
+    <img src="photo8.jpg" alt="Şəkil 8">
+    <img src="photo9.jpg" alt="Şəkil 9">
+    <img src="photo10.jpg" alt="Şəkil 10">
+    <img src="photo11.jpg" alt="Şəkil 11">
+    <img src="photo12.jpg" alt="Şəkil 12">
+  </div>
+
+  <!-- ✨ Текст под фото -->
+  <div class="after-text">
+    Bu gün sənə aid olan ən gözəl gündür! 💫 Sevincli, xoşbəxt və yaddaqalan olsun! 💖
+
+      Kas 1 defe dunyaya gelmek yerine 5 defe dunyaya gele bilseydim,ferqli ferqli olkelerde,ferqli adet enenelerle,belelikle 5 ferqli heyat yasayar,5 ferqli kariyera qurar,5 ferqli xasiyetim olardi ve butun 5 heyatimin hamsinda senin kimi anaya sahib oldugum ucun tanriya sukr ederdim.Yaxsi ki varsan,seni sevirem mamili!!!
+  </div>
 
 </body>
 </html>
