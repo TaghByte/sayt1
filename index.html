@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Ad günün mübarək!</title>
 
-  <!-- Подключение Google Fonts -->
+  <!-- Подключение шрифтов -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
     }
 
     .after-text {
-      font-family: 'Playwrite AU QLD', sans-serif; /* ⬅️ Шрифт для текста после фоток */
+      font-family: 'Playwrite AU QLD', sans-serif;
       font-size: 36px;
       color: #ffd700;
       font-weight: bold;
@@ -60,15 +60,33 @@
       text-shadow: 1px 1px 8px #ffd70088;
     }
 
-    audio {
-      display: none;
+    .music-button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin-bottom: 30px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff69b4aa;
+      transition: background-color 0.3s;
+    }
+
+    .music-button:hover {
+      background-color: #ff85c1;
     }
   </style>
 </head>
 <body>
 
-  <!-- 🎵 Фоновая музыка -->
-  <audio autoplay loop>
+  <!-- 🔊 Кнопка запуска музыки -->
+  <button class="music-button" onclick="document.getElementById('bgmusic').play()">
+    🔊 Musiqini başlat
+  </button>
+
+  <!-- 🎵 Аудио -->
+  <audio id="bgmusic" loop>
     <source src="saytp1.mp3" type="audio/mpeg">
     Brauzerin musiqini dəstəkləmir 😢
   </audio>
@@ -93,11 +111,14 @@
     <img src="photo12.jpg" alt="Şəkil 12">
   </div>
 
-  <!-- ✨ Текст под фото -->
+  <!-- ✨ Текст под фотками -->
   <div class="after-text">
     Bu gün sənə aid olan ən gözəl gündür! 💫 Sevincli, xoşbəxt və yaddaqalan olsun! 💖
 
-      Kas 1 defe dunyaya gelmek yerine 5 defe dunyaya gele bilseydim,ferqli ferqli olkelerde,ferqli adet enenelerle,belelikle 5 ferqli heyat yasayar,5 ferqli kariyera qurar,5 ferqli xasiyetim olardi ve butun 5 heyatimin hamsinda senin kimi anaya sahib oldugum ucun tanriya sukr ederdim.Yaxsi ki varsan,seni sevirem mamili!!!
+
+
+
+    Kas 1 defe dunyaya gelmek yerine 5 defe dunyaya gele bilseydim,ferqli ferqli olkelerde,ferqli adet enenelerle,belelikle 5 ferqli heyat yasayar,5 ferqli kariyera qurar,5 ferqli xasiyetim olardi ve butun 5 heyatimin hamsinda senin kimi anaya sahib oldugum ucun tanriya sukr ederdim.Yaxsi ki varsan,seni sevirem mamili!!!
   </div>
 
 </body>
